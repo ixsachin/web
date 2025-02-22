@@ -106,6 +106,150 @@ header .form a i{
     padding: 10px;
 
 }
+/* Signup Container */
+.signup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px); 
+    z-index: 1000; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Signup Form */
+/* Signup Container */
+.signup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px); 
+    z-index: 1000; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
+/* Signup Form */
+.signup-form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.signup-form  .title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+.signup-form a{
+    text-decoration: none;
+}
+.signup-form .close-btn i{
+    position: relative;
+    left: 80px;
+    bottom: 4px;
+    font-size: 25px;
+}
+#signupForm .subtitle{
+    display: block;
+    margin-bottom: 40px;
+}
+#signupForm input{
+    border-radius: 20px;
+}
+.form-group {
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+.form-group  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.signup-Btn {
+    margin-top: 40px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #0166ff;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-Btn:hover {
+    background-color: #0f9dc0;
+}
+.form-section a{
+    text-decoration: underline;
+}
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+/* Code ends here by myself */
 .promise .p-1{
     backdrop-filter: blur(20px);
     background-color: rgba(255, 255, 255, 0.2);
@@ -361,4 +505,4 @@ header .navbar ul li:first-child a:hover::after {
     object-fit: cover;
     z-index: -1;
 }
-/*responsive*/
+

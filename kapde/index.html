@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +9,18 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="redmi.html">
     <link rel="stylesheet" href="uiverse.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
     <video autoplay muted loop id="background-video">
         <source src="video5.mp4" type="video/mp4">
     </video>
     <header>
-       
+
         <div class="navbar">
             <ul>
                 <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
@@ -29,15 +33,42 @@
             <h1>KAPDE</h1>
         </div>
         <div class="form">
-            <a href="#"class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></a>   
+            <a href="#" class="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></a>
             <a href="login.html"><i class="fa-solid fa-user"></i></a>
-            <a href="signup.html">Signup</a>
         </div>
     </header>
+    <!-- Signup Container -->
+    <div class="signup-container" id="signupContainer">
+        <div class="signup-form">
+            <span class="title">Sign up</span>
+            <span class="close-btn" id="closeBtn"><i class="fa-solid fa-circle-xmark"></i></span>
+            <form id="signupForm">
+                <span class="subtitle">Create a free account with your email.</span>
+                <div class="form-group">
+                    <input type="text" id="username" name="username" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="confirm-password"
+                        required>
+                </div>
+                <button class="signup-Btn" type="submit">Sign up</button>
+            </form>
+            <div class="form-section">
+                <p>Have an account? <a href="login.html">Log in</a> </p>
+            </div>
+        </div>
+    </div>
+    <!-- Form -->
     <div class="promise">
         <div class="p-1">
-           <h3>Free shiping and return</h3>
-           <p>Free shipping on all orders over $49</p>
+            <h3>Free shiping and return</h3>
+            <p>Free shipping on all orders over $49</p>
         </div>
         <div class="p-2">
             <h3>MONEY BACK GUARANTEE</h3>
@@ -59,7 +90,7 @@
             </div>
         </div>
         <div class="female">
-            <a href="#"><img src="02.png" alt=""></a>
+            <a href="women.html"><img src="02.png" alt=""></a>
             <div class="female-1">
                 <h3>female wear</h3>
                 <button class="bt">
@@ -68,7 +99,7 @@
             </div>
         </div>
         <div class="kid">
-            <a href="#"><img src="03.png" alt=""></a>
+            <a href="kid.html"><img src="03.png" alt=""></a>
             <div class="kid-1">
                 <h3>kid wear</h3>
                 <button class="bt">
@@ -128,5 +159,8 @@
             <p class="made-in-india">Made in India, for the World <i class="fa-solid fa-globe"></i></p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
